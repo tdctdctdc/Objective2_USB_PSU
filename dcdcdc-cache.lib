@@ -1,0 +1,285 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Connector_Screw_Terminal_01x01
+#
+DEF Connector_Screw_Terminal_01x01 J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Screw_Terminal_01x01" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TerminalBlock*:*
+$ENDFPLIST
+DRAW
+C 0 0 25 1 1 6 N
+S -50 50 50 -50 1 1 10 f
+P 2 1 1 6 -21 13 13 -20 N
+P 2 1 1 6 -14 20 20 -13 N
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_TestPoint
+#
+DEF Connector_TestPoint TP 0 30 N N 1 F N
+F0 "TP" 0 270 50 H V C CNN
+F1 "Connector_TestPoint" 0 200 50 H V C CNN
+F2 "" 200 0 50 H I C CNN
+F3 "" 200 0 50 H I C CNN
+$FPLIST
+ Pin*
+ Test*
+$ENDFPLIST
+DRAW
+C 0 130 30 0 1 0 N
+X 1 1 0 0 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_CP_Small
+#
+DEF Device_CP_Small C 0 10 N N 1 F N
+F0 "C" 10 70 50 H V L CNN
+F1 "Device_CP_Small" 10 -80 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ CP_*
+$ENDFPLIST
+DRAW
+S -60 -12 60 -27 0 1 0 F
+S -60 27 60 12 0 1 0 N
+P 2 0 1 0 -50 60 -30 60 N
+P 2 0 1 0 -40 50 -40 70 N
+X ~ 1 0 100 73 D 50 50 1 1 P
+X ~ 2 0 -100 73 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_C_Small
+#
+DEF Device_C_Small C 0 10 N N 1 F N
+F0 "C" 10 70 50 H V L CNN
+F1 "Device_C_Small" 10 -80 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 13 -60 -20 60 -20 N
+P 2 0 1 12 -60 20 60 20 N
+X ~ 1 0 100 80 D 50 50 1 1 P
+X ~ 2 0 -100 80 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_Jumper_NC_Small
+#
+DEF Device_Jumper_NC_Small JP 0 30 N N 1 F N
+F0 "JP" 0 80 50 H V C CNN
+F1 "Device_Jumper_NC_Small" 10 -60 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SolderJumper*Bridged*
+ Jumper*
+ TestPoint*2Pads*
+ TestPoint*Bridge*
+$ENDFPLIST
+DRAW
+A 0 -10 57 450 1350 0 1 0 N 40 30 -40 30
+C -40 0 20 0 1 0 N
+C 40 0 20 0 1 0 N
+X 1 1 -100 0 40 R 50 50 0 1 P
+X 2 2 100 0 40 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R_Small_US
+#
+DEF Device_R_Small_US R 0 10 N N 1 F N
+F0 "R" 30 20 50 H V L CNN
+F1 "Device_R_Small_US" 30 -40 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+P 5 1 1 0 0 0 40 -15 0 -30 -40 -45 0 -60 N
+P 5 1 1 0 0 60 40 45 0 30 -40 15 0 0 N
+X ~ 1 0 100 40 D 50 50 1 1 P
+X ~ 2 0 -100 40 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# MaLib_TEC_2-0923
+#
+DEF MaLib_TEC_2-0923 U 0 40 Y Y 1 F N
+F0 "U" 500 50 50 H V C CNN
+F1 "MaLib_TEC_2-0923" 500 150 50 H V C CNN
+F2 "MYLIB:TEC_2-0523" 500 350 50 H I C CNN
+F3 "" 150 700 50 H I C CNN
+DRAW
+S 0 0 1050 -800 0 1 0 f
+X -Vin_(gnd) 1 -100 -700 100 R 50 50 1 1 W
+X +Vin_(Vcc) 2 -100 -500 100 R 50 50 1 1 W
+X EN 3 -100 -200 100 R 50 50 1 1 W
+X NC 5 600 -900 100 U 50 50 1 1 N
+X +Vout 6 1150 -200 100 L 50 50 1 1 w
+X Com 7 1150 -450 100 L 50 50 1 1 w
+X -Vout 8 1150 -700 100 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+# Mechanical_MountingHole
+#
+DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 50 N
+ENDDRAW
+ENDDEF
+#
+# Regulator_Linear_ADP7142AUJZ
+#
+DEF Regulator_Linear_ADP7142AUJZ U 0 20 Y Y 1 F N
+F0 "U" 0 350 50 H V C TNN
+F1 "Regulator_Linear_ADP7142AUJZ" 0 250 50 H V C CNN
+F2 "Package_TO_SOT_SMD:TSOT-23-5" 0 -400 50 H I C CIN
+F3 "" 0 -500 50 H I C CNN
+ALIAS ADP7142AUJZ-1.8 ADP7142AUJZ-2.5 ADP7142AUJZ-3.3 ADP7142AUJZ-5.0
+$FPLIST
+ TSOT?23*
+$ENDFPLIST
+DRAW
+S -300 200 300 -200 0 1 10 f
+X VIN 1 -400 100 100 R 50 50 1 1 W
+X GND 2 0 -300 100 U 50 50 1 1 W
+X EN 3 -400 -100 100 R 50 50 1 1 I
+X SENSE/ADJ 4 400 0 100 L 50 50 1 1 I
+X VOUT 5 400 100 100 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+# Regulator_Linear_ADP7182AUJZ
+#
+DEF Regulator_Linear_ADP7182AUJZ U 0 20 Y Y 1 F N
+F0 "U" 0 -300 50 H V C TNN
+F1 "Regulator_Linear_ADP7182AUJZ" 0 -250 50 H V C CNN
+F2 "Package_TO_SOT_SMD:TSOT-23-5" 0 -400 50 H I C CIN
+F3 "" 0 -500 50 H I C CNN
+$FPLIST
+ TSOT?23*
+$ENDFPLIST
+DRAW
+S -300 200 300 -200 0 1 10 f
+X GND 1 0 300 100 D 50 50 1 1 W
+X VIN 2 -400 -100 100 R 50 50 1 1 W
+X EN 3 -400 100 100 R 50 50 1 1 I
+X ADJ 4 400 0 100 L 50 50 1 1 I
+X VOUT 5 400 -100 100 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_TBA_1-0522E
+#
+DEF SamacSys_Parts_TBA_1-0522E PS 0 30 Y Y 1 F N
+F0 "PS" 1150 300 50 H V L CNN
+F1 "SamacSys_Parts_TBA_1-0522E" 1150 200 50 H V L CNN
+F2 "TBA10522E" 1150 100 50 H I L CNN
+F3 "https://www.tracopower.com/products/tba1e.pdf" 1150 0 50 H I L CNN
+F4 "1 Watt DC/DC converter, industrial, +/-10% input, short circuit protection, unregulated, encapsulated, SIP-7" 1150 -100 50 H I L CNN "Description"
+F5 "10.35" 1150 -200 50 H I L CNN "Height"
+F6 "495-TBA1-0522E" 1150 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/TRACO-Power/TBA-1-0522E?qs=byeeYqUIh0N72%2FQSgieQ2g%3D%3D" 1150 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Traco Power" 1150 -500 50 H I L CNN "Manufacturer_Name"
+F9 "TBA 1-0522E" 1150 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 1100 100 1100 -500 200 -500 200 100 N
+X +VIN_(VCC) 1 0 0 200 R 50 50 0 0 P
+X -VIN_(GND) 2 0 -100 200 R 50 50 0 0 P
+X -VOUT 4 0 -200 200 R 50 50 0 0 P
+X COMMON 5 0 -300 200 R 50 50 0 0 P
+X +VOUT 6 0 -400 200 R 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_TEM_3-0523N
+#
+DEF SamacSys_Parts_TEM_3-0523N PS 0 30 Y Y 1 F N
+F0 "PS" 1950 300 50 H V L CNN
+F1 "SamacSys_Parts_TEM_3-0523N" 1950 200 50 H V L CNN
+F2 "TEM30523N" 1950 100 50 H I L CNN
+F3 "https://www.tracopower.com/sites/default/files/products/datasheets/tem3n_datasheet.pdf" 1950 0 50 H I L CNN
+F4 "TRACOPOWER 3W Isolated DC-DC Converter, Vin 4.5  5.5 V dc, Vout +/-15V dc, I/O isolation 1500V dc" 1950 -100 50 H I L CNN "Description"
+F5 "10.7" 1950 -200 50 H I L CNN "Height"
+F6 "495-TEM3-0523N" 1950 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/TRACO-Power/TEM-3-0523N?qs=ckJk83FOD0UwnWsEQs73BQ%3D%3D" 1950 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Traco Power" 1950 -500 50 H I L CNN "Manufacturer_Name"
+F9 "TEM 3-0523N" 1950 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 1900 100 1900 -600 200 -600 200 100 N
+X +VIN_(VCC)_1 1 0 0 200 R 50 50 0 0 P
+X COMMON_2 10 0 -300 200 R 50 50 0 0 P
+X +VOUT_1 11 0 -400 200 R 50 50 0 0 P
+X -VIN_(GND)_1 12 0 -500 200 R 50 50 0 0 P
+X -VIN_(GND)_2 13 2100 -500 200 L 50 50 0 0 P
+X +VOUT_2 14 2100 -400 200 L 50 50 0 0 P
+X COMMON_3 15 2100 -300 200 L 50 50 0 0 P
+X -VOUT_1 2 0 -100 200 R 50 50 0 0 P
+X COMMON_4 22 2100 -200 200 L 50 50 0 0 P
+X -VOUT_2 23 2100 -100 200 L 50 50 0 0 P
+X +VIN_(VCC)_2 24 2100 0 200 L 50 50 0 0 P
+X COMMON_1 3 0 -200 200 R 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# dcdcdc-rescue_UJC-HP-3-SMT-TR-UJC-HP-3-SMT-TR-O2_USB_PSU-rescue
+#
+DEF dcdcdc-rescue_UJC-HP-3-SMT-TR-UJC-HP-3-SMT-TR-O2_USB_PSU-rescue J 0 40 Y Y 1 L N
+F0 "J" -300 350 50 H V L BNN
+F1 "dcdcdc-rescue_UJC-HP-3-SMT-TR-UJC-HP-3-SMT-TR-O2_USB_PSU-rescue" -300 -450 50 H V L BNN
+F2 "CUI_UJC-HP-3-SMT-TR" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "Manufacturer Recommendations" 0 0 50 H I L BNN "STANDARD"
+F5 "1.0" 0 0 50 H I L BNN "PARTREV"
+F6 "3.16mm" 0 0 50 H I L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F7 "CUI Devices" 0 0 50 H I L BNN "MANUFACTURER"
+DRAW
+S -300 -400 300 300 0 0 10 f
+X GND A12 -500 -100 200 R 40 40 0 0 W
+X CC1 A5 -500 200 200 R 40 40 0 0 B
+X V-BUS A9 -500 0 200 R 40 40 0 0 W
+X GND B12 -500 -100 200 R 40 40 0 0 W
+X CC2 B5 -500 100 200 R 40 40 0 0 B
+X V-BUS B9 -500 0 200 R 40 40 0 0 W
+X SHIELD S1 -500 -300 200 R 40 40 0 0 P
+X SHIELD S2 -500 -300 200 R 40 40 0 0 P
+X SHIELD S3 -500 -300 200 R 40 40 0 0 P
+X SHIELD S4 -500 -300 200 R 40 40 0 0 P
+ENDDRAW
+ENDDEF
+#
+# power_GNDA
+#
+DEF power_GNDA #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GNDA" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GNDA 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library
