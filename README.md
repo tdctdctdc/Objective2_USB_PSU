@@ -1,6 +1,8 @@
 # Objective2_USB_PSU
 Isolated USB power supply for the Objective 2 Headphone Amp
 
+![Screenshot](populated_board.png)
+
 Board fit in the battery compartment
 held in place using Hole1 (M3)
 
